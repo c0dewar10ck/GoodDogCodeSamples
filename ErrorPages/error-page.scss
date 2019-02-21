@@ -1,0 +1,54 @@
+.error-page {
+  position: relative;
+  height: 100vh;
+
+  > .error-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.4;
+
+    > .error-title {
+      height: 190px;
+
+      > h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 146px;
+        font-weight: 700px;
+        margin: 0px;
+        color: #232323;
+
+        > span {
+          display: inline-block;
+          width: 130px;
+          height: 120px;
+          background-image: url("/img/sad-dog.png");
+          background-size: cover;
+          transform: scale(1.5);
+          z-index: -1;
+        }
+      }
+    }
+
+    > .image-goodbye-cropped {
+      border-radius: 50px;
+      margin-bottom: 25px;
+      background: url("https://media.giphy.com/media/3oKIPsx2VAYAgEHC12/giphy.gif")
+        30% 50% no-repeat;
+      width: 400px;
+      height: 250px;
+    }
+
+    > .error-button {
+      font-family: "Montserrat", sans-serif;
+      display: inline-block;
+      padding: 12px 30px;
+      font-weight: 700;
+      border-radius: 40px;
+    }
+  }
+}
